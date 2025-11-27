@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kuis Literasi Digital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PAGE: Pilih Tema -->
+  <div id="themePage" class="page active">
+    <h1>PILIH TEMA KUIS GAISS</h1>
+    <div class="theme-container">
+      <button class="theme-btn" data-theme="sipil">🏗 Teknik Sipil</button>
+      <button class="theme-btn" data-theme="umum">🌍 Umum</button>
+      <button class="theme-btn" data-theme="alam">🌿 Alam</button>
+      <button class="theme-btn" data-theme="matematika">➕ Matematika</button>
+      <button class="theme-btn" data-theme="love">❤️ Percintaan</button>
+    </div>
+  </div>
+
+  <!-- PAGE: Kuis -->
+  <div id="quizPage" class="page">
+    <h2 id="question">Soal muncul di sini</h2>
+
+    <div class="btn-row">
+      <button id="btnTrue" class="answer-btn true">✔ Benar</button>
+      <button id="btnFalse" class="answer-btn false">✖ Salah</button>
+    </div>
+
+    <p id="scoreText">Skor: 0</p>
+    <p id="questionCount">Pertanyaan 0 / 10</p>
+  </div>
+
+  <!-- PAGE: Win -->
+  <div id="winPage" class="page">
+    <h1>CIE MENANG</h1>
+    <img id="winImage" class="win-img" src="ASSETS/menang.jpg" alt="Win" />
+    <button id="restartWin" class="restart-btn">Main Lagi 🔄</button>
+  </div>
+
+  <!-- PAGE: Lose -->
+  <div id="losePage" class="page">
+    <h1>YA AMPYUNN KALAHAN REK</h1>
+    <img src="ASSETS/ya allah.jpg" class="win-img" alt="Lose" />
+    <button id="restartLose" class="restart-btn">Coba Lagi 🔁</button>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
